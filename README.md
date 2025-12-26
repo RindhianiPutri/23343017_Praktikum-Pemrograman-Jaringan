@@ -9,7 +9,7 @@ Setiap folder jobsheet dilengkapi dengan:
 - 📄 `README.md` → penjelasan materi & hasil pembelajaran  
 - 📁 Folder dokumentasi (screenshot/ss) sebagai bukti praktikum  
 
----
+
 
 ## 📂 Daftar Jobsheet
 
@@ -22,7 +22,7 @@ Setiap folder jobsheet dilengkapi dengan:
 | 5️⃣ | **JobSheet 5 – Web Server and ExpressJs** | Membangun web server dengan Express.js dan Handlebars |
 | 6️⃣ | **JobSheet 6 – JSON HTTP Endpoints** | Pembuatan endpoint JSON dinamis dan integrasi API cuaca |
 
----
+
 
 ## 🧩 Struktur Direktori
 
@@ -39,7 +39,7 @@ Setiap folder jobsheet dilengkapi dengan:
 
 ```
 
----
+
 
 ## 💡 Tentang Repositori
 
@@ -52,21 +52,19 @@ Setiap jobsheet dirancang untuk:
 - Mengintegrasikan backend, frontend, dan API eksternal
 - Melatih pembuatan aplikasi web berbasis jaringan secara nyata
 
----
+
 
 ## 👩‍💻 Identitas Mahasiswa
 
 - **Nama** : Rindhiani Putri  
 - **NIM** : 23343017  
-- **Program Studi** : *(isi jika perlu)*  
+- **Program Studi** : *Informatika*  
 - **Universitas** : Universitas Negeri Padang  
 - **Tahun** : 2025  
 
----
+
 
 📌 *Repositori ini menjadi portofolio pembelajaran saya dalam pengembangan aplikasi berbasis jaringan menggunakan Node.js.*
-```
 
----
 
 
