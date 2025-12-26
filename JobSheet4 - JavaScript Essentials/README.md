@@ -1,32 +1,34 @@
-JobSheet 4 – JavaScript Essentials
-Pengantar JavaScript
+📘 JobSheet 4 – JavaScript Essentials
+🔹 Pengantar JavaScript
 
-JavaScript merupakan bahasa pemrograman yang banyak digunakan dalam pengembangan aplikasi web, khususnya untuk menciptakan halaman yang interaktif dan responsif. Dengan JavaScript, aplikasi web dapat memproses input pengguna dan memperbarui tampilan secara langsung tanpa harus memuat ulang halaman.
+JavaScript merupakan bahasa pemrograman yang banyak digunakan dalam pengembangan aplikasi web, terutama untuk menciptakan halaman yang interaktif, dinamis, dan responsif. Dengan JavaScript, aplikasi web dapat memproses input pengguna serta memperbarui tampilan secara langsung tanpa perlu memuat ulang seluruh halaman, sehingga meningkatkan pengalaman pengguna.
 
-Sejarah Singkat JavaScript
+🔹 Sejarah Singkat JavaScript
 
-JavaScript pertama kali dikembangkan oleh Brendan Eich pada tahun 1995. Awalnya bahasa ini diberi nama LiveScript, kemudian diubah menjadi JavaScript untuk mengikuti tren teknologi saat itu. Seiring waktu, JavaScript berkembang pesat dan menjadi fondasi utama pengembangan web modern, terutama dengan hadirnya berbagai library dan framework.
+JavaScript pertama kali dikembangkan oleh Brendan Eich pada tahun 1995. Bahasa ini awalnya diberi nama LiveScript, kemudian diubah menjadi JavaScript untuk menyesuaikan tren teknologi yang sedang berkembang saat itu. Seiring berjalannya waktu, JavaScript berkembang menjadi bahasa utama dalam pengembangan web modern, didukung oleh berbagai library dan framework populer.
 
-Fungsi JavaScript dalam Aplikasi Jaringan
+🔹 Fungsi JavaScript dalam Aplikasi Jaringan
 
 Dalam konteks aplikasi berbasis jaringan, JavaScript memiliki peran penting, antara lain:
 
-Mengelola interaksi pengguna melalui manipulasi DOM
+Mengelola interaksi pengguna melalui manipulasi Document Object Model (DOM)
 
-Menampilkan data secara dinamis tanpa memuat ulang halaman
+Menampilkan dan memperbarui data secara dinamis tanpa memuat ulang halaman
 
 Mendukung komunikasi data antara client dan server secara asinkron
 
-Mengontrol perilaku elemen web seperti form, tombol, dan event lainnya
+Mengontrol perilaku elemen web seperti form, tombol, dan berbagai event pengguna
 
-Teknologi Pendukung JavaScript
+🔹 Teknologi Pendukung JavaScript
 
-Beberapa teknologi yang sering digunakan bersama JavaScript antara lain:
+Beberapa teknologi yang umum digunakan bersama JavaScript meliputi:
 
-AJAX: memungkinkan pertukaran data dengan server secara asinkron
+AJAX (Asynchronous JavaScript and XML)
+Digunakan untuk melakukan pertukaran data dengan server secara asinkron tanpa mengganggu tampilan halaman.
 
-Library & Framework: seperti React, Vue.js, dan Angular untuk membangun aplikasi web yang lebih terstruktur dan kompleks
+Library dan Framework
+Seperti React, Vue.js, dan Angular, yang membantu pengembangan aplikasi web menjadi lebih terstruktur, efisien, dan mudah dikelola.
 
-Peran JavaScript dalam Pemrograman Jaringan Modern
+🔹 Peran JavaScript dalam Pemrograman Jaringan Modern
 
-JavaScript menjadi salah satu komponen utama dalam pemrograman jaringan modern karena kemampuannya menangani komunikasi real-time dan interaksi pengguna secara efisien. Bahasa ini mendukung pengembangan aplikasi yang cepat, fleksibel, dan mampu memberikan pengalaman pengguna yang lebih baik.
+JavaScript merupakan salah satu pilar utama dalam pemrograman jaringan modern. Kemampuannya dalam menangani komunikasi real-time, mengelola interaksi pengguna, serta mendukung pengembangan aplikasi yang cepat dan fleksibel menjadikan JavaScript sangat relevan untuk memenuhi kebutuhan aplikasi web masa kini.
