@@ -1,68 +1,70 @@
-📘 JobSheet 6 – JSON HTTP Endpoints
-🧩 Deskripsi Singkat
+# 🧪 Jobsheet Node.js – Sistem Modul dan NPM
 
-Pada JobSheet ini, saya mempelajari cara membangun JSON HTTP Endpoints menggunakan Express.js. Fokus utama meliputi pembuatan endpoint dinamis, penggunaan query string (req.query), serta integrasi API eksternal untuk menampilkan data cuaca secara real-time.
-Jobsheet ini juga menghubungkan backend dan frontend menggunakan Fetch API tanpa perlu reload halaman.
+**Mata Kuliah: Pemrograman Jaringan**
 
-🎯 Tujuan Pembelajaran
 
-Melalui jobsheet ini, saya memahami:
+## 📘 Pengantar Node.js dan Sistem Modul
 
-Konsep JSON HTTP Endpoints
+Pada jobsheet ini, saya memperoleh pengalaman langsung dalam memahami dan menerapkan **sistem modul pada Node.js**. Materi yang dipelajari berfokus pada cara memecah kode menjadi beberapa modul agar lebih terstruktur, mudah dikelola, dan dapat digunakan kembali.
 
-Pembuatan endpoint dinamis dengan Express.js
+Selain itu, jobsheet ini juga membahas pemanfaatan **modul bawaan Node.js**, pengelolaan dependensi menggunakan **Node Package Manager (NPM)**, serta penggunaan **command line arguments** untuk membuat aplikasi berbasis terminal yang interaktif.
 
-Penggunaan query string sebagai input pengguna
 
-Integrasi Node.js dengan API eksternal
+## 🔑 Konsep Dasar yang Dipelajari
 
-Komunikasi frontend–backend secara asinkron
+Beberapa konsep utama yang dipelajari dalam jobsheet ini meliputi:
 
-Validasi input dan peningkatan tampilan UI
+* **Sistem Modul Node.js**  
+  Penggunaan `require()` dan `module.exports` untuk membangun dan menghubungkan modul antar file.
 
-🛠️ Bagian Latihan
+* **Modul Bawaan Node.js**  
+  Pemanfaatan modul `fs` untuk mengelola file, seperti membaca, menulis, dan menambahkan data.
 
-Langkah-langkah yang saya lakukan:
+* **Node Package Manager (NPM)**  
+  Digunakan untuk mengelola dependensi proyek dan library pihak ketiga.
 
-Membuat endpoint /infoCuaca dengan respons JSON dinamis
+* **Command Line Arguments**  
+  Menggunakan `process.argv` dan `yargs` untuk membaca input dari terminal.
 
-Menggunakan req.query untuk membaca parameter lokasi
 
-Mengintegrasikan API Mapbox dan Weatherstack
+## ⚙️ Implementasi Modul dan NPM
 
-Membuat modul:
+Pada tahap implementasi, aplikasi Node.js dikembangkan secara bertahap dengan pendekatan modular. Kode dipisahkan ke dalam beberapa file agar lebih rapi dan mudah dipahami.
 
-geocode.js (data lokasi)
+Beberapa package eksternal yang digunakan antara lain:
 
-prediksiCuaca.js (informasi cuaca)
+* **validator** → untuk melakukan validasi data
+* **chalk** → untuk menampilkan teks berwarna di terminal
+* **nodemon** → untuk menjalankan aplikasi dengan fitur auto-reload
 
-Menggabungkan modul di app.js hingga menghasilkan output JSON
 
-Menghubungkan frontend dengan Fetch API
+## 🧪 Bagian Latihan
 
-Menambahkan validasi input dan CSS agar tampilan lebih interaktif
+Langkah-langkah latihan yang saya lakukan meliputi:
 
-Contoh respons JSON:
+* Membuat dan mengelola file catatan menggunakan modul `fs`, termasuk menulis dan menambahkan data baru
+* Membangun modul sendiri (`catatan.js`) dan mengintegrasikannya ke dalam aplikasi menggunakan `require()`
+* Menginisialisasi proyek Node.js dengan `npm init`
+* Menginstal dan menggunakan package eksternal melalui NPM
+* Menerapkan command line arguments menggunakan `process.argv` dan `yargs`
+* Mengembangkan aplikasi catatan sederhana berbasis terminal
 
-{
-  "prediksiCuaca": "Cuaca cerah dengan suhu 30 derajat",
-  "lokasi": "Padang, Indonesia",
-  "address": "padang"
-}
 
-✅ Hasil
+## 🧾 Hasil Implementasi
 
-Aplikasi berhasil:
+Hasil akhir dari jobsheet ini adalah sebuah **aplikasi catatan (notes app)** berbasis Node.js yang memiliki fitur:
 
-Menampilkan data cuaca berdasarkan lokasi
+* **Create** → menambahkan catatan baru  
+* **Read** → menampilkan dan membaca catatan  
+* **Update** → memperbarui catatan  
+* **Delete** → menghapus catatan  
 
-Mengirim dan menerima data dalam format JSON
+Seluruh fitur dijalankan melalui terminal menggunakan perintah yang interaktif.
 
-Mengintegrasikan frontend, backend, dan API eksternal
 
-Menyajikan informasi secara real-time tanpa refresh
+## 🧾 Kesimpulan
 
-📌 Kesimpulan
+Melalui jobsheet ini, saya memahami cara kerja **sistem modul pada Node.js** serta pentingnya modularisasi kode dalam pengembangan aplikasi. Saya juga mempelajari penggunaan **NPM** untuk mengelola dependensi, pemanfaatan modul bawaan seperti `fs`, serta penerapan **command line arguments** untuk membangun aplikasi berbasis terminal yang dinamis.
 
-JobSheet ini membantu saya memahami peran penting JSON HTTP Endpoints dalam aplikasi web modern. Saya belajar membangun endpoint dinamis, mengelola input pengguna, menghubungkan API eksternal, serta mengintegrasikan frontend dan backend secara efektif.
-Secara keseluruhan, jobsheet ini memperkuat pemahaman saya tentang alur kerja aplikasi web berbasis API 🌐✨
+📌 *Jobsheet ini memberikan dasar yang kuat dalam pengembangan aplikasi Node.js sebelum masuk ke tahap web server dan API pada jobsheet selanjutnya.*
+
