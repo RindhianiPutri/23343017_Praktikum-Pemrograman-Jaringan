@@ -2,7 +2,7 @@
 
 **Mata Kuliah: Pemrograman Jaringan**
 
----
+
 
 ## 📘 Pengantar Web Server dan Express.js
 
@@ -10,7 +10,7 @@ Web server merupakan komponen penting dalam aplikasi web yang berfungsi untuk me
 
 Pada jobsheet ini, saya mempelajari cara membangun **web server sederhana menggunakan Node.js dan Express.js**, serta menerapkan **templating engine Handlebars (hbs)** untuk menghasilkan tampilan web yang dinamis dan terstruktur.
 
----
+
 
 ## 🔑 Konsep Dasar Web Server
 
@@ -28,7 +28,7 @@ Beberapa konsep utama yang dipelajari dalam jobsheet ini antara lain:
 * **Static Assets**  
   File pendukung seperti HTML, CSS, JavaScript, dan gambar yang disajikan langsung oleh server.
 
----
+
 
 ## ⚙️ Implementasi Express.js
 
@@ -43,13 +43,13 @@ Express.js digunakan sebagai **framework backend** untuk membangun web server se
 
 Express.js mempermudah pengelolaan routing serta respon server dalam pengembangan aplikasi web.
 
----
+
 
 ## 🧩 Integrasi HTML dan JSON
 
 Pada jobsheet ini, server tidak hanya menampilkan halaman web dalam format **HTML**, tetapi juga mengirimkan data dalam format **JSON**. Hal ini bertujuan untuk memperkenalkan perbedaan jenis response yang dapat diberikan oleh server sesuai kebutuhan aplikasi.
 
----
+
 
 ## 📂 Pengelolaan Static Assets
 
@@ -62,7 +62,7 @@ Untuk mengatur file statis, digunakan modul **`path`** dan middleware **`express
 
 Pengelolaan static assets membantu menjaga struktur proyek tetap rapi dan terorganisir.
 
----
+
 
 ## 🧵 Penggunaan Handlebars (hbs)
 
@@ -74,7 +74,7 @@ Beberapa penerapan Handlebars yang dilakukan antara lain:
 * Membuat **partials** seperti header dan footer agar kode HTML dapat digunakan ulang
 * Mengatur layout halaman agar lebih konsisten dan mudah dikelola
 
----
+
 
 ## 🎨 Tampilan dan Halaman Error
 
@@ -86,7 +86,7 @@ Untuk mempercantik tampilan aplikasi, ditambahkan:
 
 Selain itu, diterapkan **wildcard route (404 page)** untuk menangani URL yang tidak ditemukan, sehingga aplikasi tetap memberikan respon yang informatif kepada pengguna.
 
----
+
 
 ## 🧾 Kesimpulan
 
