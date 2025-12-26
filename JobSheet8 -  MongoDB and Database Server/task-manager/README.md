@@ -1,6 +1,6 @@
 # 🗂 Jobsheet 8 – MongoDB & Database Server
 
-**Mata Kuliah:** Pemrograman Jaringan  
+**Mata Kuliah:** Praktikum Pemrograman Jaringan  
 
 ## 📌 Topik
 - Node.js
