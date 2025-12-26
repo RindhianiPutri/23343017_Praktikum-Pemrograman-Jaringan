@@ -2,7 +2,7 @@
 
 **Mata Kuliah: Pemrograman Jaringan**
 
----
+
 
 ## 📘 Pengantar JSON HTTP Endpoints
 
@@ -10,7 +10,7 @@ JSON HTTP Endpoints merupakan bagian penting dalam pengembangan aplikasi web mod
 
 Pada jobsheet ini, JSON HTTP Endpoints dibangun menggunakan **Express.js** untuk melayani permintaan data cuaca secara dinamis berdasarkan input lokasi dari pengguna.
 
----
+
 
 ## 🔑 Konsep Dasar JSON HTTP Endpoints
 
@@ -31,7 +31,7 @@ Beberapa konsep utama yang dipelajari dalam jobsheet ini antara lain:
 * **Integrasi API Eksternal**  
   Menghubungkan aplikasi dengan layanan pihak ketiga untuk mendapatkan data tambahan.
 
----
+
 
 ## ⚙️ Implementasi Express.js
 
@@ -42,7 +42,7 @@ Express.js digunakan sebagai **framework backend** untuk membangun server dan en
 
 Penggunaan Express.js mempermudah pengelolaan routing, request, dan response sehingga pembuatan API menjadi lebih terstruktur.
 
----
+
 
 ## 🌐 Integrasi API Eksternal
 
@@ -59,7 +59,7 @@ Kedua API tersebut diakses melalui dua modul utilitas:
 * `geocode.js` → pengambilan data lokasi  
 * `prediksiCuaca.js` → pengambilan informasi cuaca  
 
----
+
 
 ## 🧪 Hasil Implementasi Endpoint
 
@@ -71,3 +71,24 @@ Hasil akhir dari endpoint JSON yang dibuat berupa respons sebagai berikut:
   "lokasi": "Padang, Indonesia",
   "address": "padang"
 }
+Data tersebut dikirimkan ke client secara dinamis sesuai dengan input lokasi pengguna.
+
+🖥️ Integrasi Frontend
+
+Aplikasi frontend dihubungkan dengan backend menggunakan Fetch API, sehingga pengguna dapat:
+
+Memasukkan lokasi melalui form pencarian
+
+Melihat hasil cuaca tanpa perlu reload halaman
+
+Mendapatkan pesan validasi ketika input lokasi kosong
+
+Tampilan aplikasi juga diperindah menggunakan CSS agar lebih interaktif dan nyaman digunakan.
+
+🧾 Kesimpulan
+
+Melalui Jobsheet 6 ini, saya memahami bahwa JSON HTTP Endpoints merupakan komponen utama dalam pengembangan aplikasi web berbasis API. Saya mempelajari cara membangun endpoint dinamis menggunakan Express.js, memanfaatkan query string sebagai input pengguna, serta mengintegrasikan Node.js dengan API eksternal seperti Mapbox dan Weatherstack.
+
+Selain itu, jobsheet ini juga memberikan pemahaman mengenai integrasi frontend dan backend menggunakan Fetch API, penerapan validasi input, serta peningkatan tampilan antarmuka.
+
+📌 Jobsheet ini membantu saya memahami alur kerja aplikasi web modern dari sisi backend, frontend, hingga integrasi API secara menyeluruh.
