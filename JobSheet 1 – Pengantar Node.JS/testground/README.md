@@ -2,7 +2,7 @@
 
 **Mata Kuliah: Pemrograman Jaringan**
 
----
+
 
 ## 📘 Pengantar Pemrograman Jaringan
 
@@ -10,7 +10,7 @@ Pemrograman jaringan merupakan cabang ilmu komputer yang membahas pembuatan apli
 
 Bidang ini menjadi fondasi penting dalam pengembangan aplikasi modern seperti website, layanan cloud, dan aplikasi mobile yang saling terhubung melalui internet.
 
----
+
 
 ## 🔑 Konsep Dasar Pemrograman Jaringan
 
@@ -34,7 +34,7 @@ Beberapa konsep utama yang perlu dipahami dalam pemrograman jaringan antara lain
 * **Pemrograman Mobile**
   Aplikasi mobile umumnya berkomunikasi dengan server melalui REST API untuk pertukaran data.
 
----
+
 
 ## ⚙️ Peran Node.js dalam Pemrograman Jaringan
 
@@ -46,7 +46,7 @@ Keunggulan utama Node.js dalam pemrograman jaringan antara lain:
 * Cocok untuk aplikasi dengan banyak koneksi bersamaan
 * Menggunakan mekanisme **event loop** tanpa blocking proses utama
 
----
+
 
 ## ⭐ Keunggulan Node.js
 
@@ -65,7 +65,7 @@ Keunggulan utama Node.js dalam pemrograman jaringan antara lain:
 * **Ekosistem NPM**
   Tersedia banyak library dan modul yang mempermudah pengembangan aplikasi.
 
----
+
 
 ## 🧾 Kesimpulan Latihan B
 
@@ -77,7 +77,7 @@ Dari latihan ini dapat disimpulkan bahwa:
 * JavaScript dapat dieksekusi langsung dari command line
 * Node.js berfungsi sebagai lingkungan runtime JavaScript di sisi server
 
----
+
 
 ## 🧾 Kesimpulan Latihan C
 
@@ -85,9 +85,9 @@ Latihan C berfokus pada pembuatan file `hello-world.js` untuk menjalankan **serv
 
 Setelah server dijalankan, aplikasi dapat diakses melalui browser dengan alamat:
 
-```
+
 http://127.0.0.1:3000/
-```
+
 
 Latihan ini memberikan pemahaman dasar mengenai:
 
@@ -95,6 +95,6 @@ Latihan ini memberikan pemahaman dasar mengenai:
 * Konsep komunikasi client dan server
 * Peran Node.js sebagai fondasi pemrograman jaringan berbasis web
 
----
+
 
 📌 *Jobsheet ini menjadi langkah awal dalam memahami penggunaan Node.js untuk pengembangan aplikasi jaringan.*
