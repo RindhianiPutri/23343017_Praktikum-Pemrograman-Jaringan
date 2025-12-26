@@ -2,7 +2,6 @@
 
 **Mata Kuliah: Pemrograman Jaringan**
 
----
 
 ## 📘 Pengantar HTTP Request dan API
 
@@ -10,7 +9,6 @@ Pada Jobsheet 3 ini, saya mempelajari konsep dasar **HTTP Request** serta penera
 
 Melalui jobsheet ini, saya memperoleh pemahaman awal mengenai komunikasi client–server dan cara mengonsumsi data dari API berbasis web.
 
----
 
 ## 🔑 Konsep Dasar HTTP Request dan API
 
@@ -31,7 +29,6 @@ Beberapa konsep utama yang dipelajari dalam jobsheet ini meliputi:
 * **Autentikasi API**  
   Penggunaan access key untuk mengakses layanan API eksternal.
 
----
 
 ## ⚙️ Implementasi API dengan Node.js
 
@@ -39,7 +36,6 @@ Dalam jobsheet ini, Node.js digunakan untuk mengirim HTTP request ke API ekstern
 
 Library **postman-request** digunakan untuk mempermudah pengiriman permintaan HTTP dan pengolahan data hasil respons.
 
----
 
 ## 🌐 Integrasi API Eksternal
 
@@ -53,7 +49,6 @@ Aplikasi yang dibuat mengintegrasikan dua API eksternal, yaitu:
 
 Kedua API tersebut digabungkan sehingga aplikasi mampu menampilkan informasi lokasi sekaligus kondisi cuaca secara dinamis.
 
----
 
 ## 🧪 Hasil Implementasi
 
@@ -64,7 +59,6 @@ Hasil dari implementasi jobsheet ini adalah aplikasi Node.js sederhana yang mamp
 * Mengambil data cuaca berdasarkan koordinat menggunakan Weatherstack API
 * Menampilkan hasil informasi cuaca dalam format teks yang mudah dibaca melalui terminal
 
----
 
 ## 🧾 Kesimpulan
 
