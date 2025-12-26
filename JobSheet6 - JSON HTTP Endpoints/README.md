@@ -1,63 +1,86 @@
-📘 JobSheet 6 – JSON HTTP Endpoints
-🧩 Deskripsi Singkat
+🧪 Jobsheet 6 – JSON HTTP Endpoints
 
-Pada JobSheet ini, saya mempelajari cara membangun JSON HTTP Endpoints menggunakan Express.js. Fokus utama meliputi pembuatan endpoint dinamis, penggunaan query string (req.query), serta integrasi API eksternal untuk menampilkan data cuaca secara real-time.
+Mata Kuliah: Pemrograman Jaringan
 
-Selain itu, jobsheet ini juga menghubungkan backend dan frontend menggunakan Fetch API tanpa perlu melakukan reload halaman.
+📘 Pengantar JSON HTTP Endpoints
 
-🎯 Tujuan Pembelajaran
+JSON HTTP Endpoints merupakan bagian penting dalam pengembangan aplikasi web modern berbasis API. Endpoint berfungsi sebagai alamat (URL) yang digunakan client untuk mengirim permintaan dan menerima respon data dari server melalui protokol HTTP dalam format JSON (JavaScript Object Notation).
 
-Melalui jobsheet ini, saya memahami:
+Pada jobsheet ini, JSON HTTP Endpoints dibangun menggunakan Express.js untuk melayani permintaan data cuaca secara dinamis berdasarkan input lokasi dari pengguna.
 
-Konsep JSON HTTP Endpoints
+🔑 Konsep Dasar JSON HTTP Endpoints
 
-Pembuatan endpoint dinamis dengan Express.js
+Beberapa konsep utama yang dipelajari dalam jobsheet ini antara lain:
 
-Penggunaan query string sebagai input pengguna
+JSON (JavaScript Object Notation)
+Format pertukaran data yang ringan, mudah dibaca, dan banyak digunakan dalam komunikasi client–server.
 
-Integrasi Node.js dengan API eksternal
+HTTP Endpoints
+URL khusus pada aplikasi web yang digunakan untuk mengirim dan menerima data melalui metode HTTP.
 
-Komunikasi frontend–backend secara asinkron
+Query String (req.query)
+Digunakan untuk mengambil parameter dari URL, misalnya ?address=padang, sebagai input dari pengguna.
 
-Validasi input dan peningkatan tampilan antarmuka (UI)
+Pemrograman Asinkron
+Memungkinkan server memproses permintaan tanpa harus menunggu proses lain selesai.
 
-🛠️ Bagian Latihan
+Integrasi API Eksternal
+Menghubungkan aplikasi dengan layanan pihak ketiga untuk mendapatkan data tambahan.
 
-Langkah-langkah yang saya lakukan meliputi:
+⚙️ Implementasi Express.js
 
-Membuat endpoint /infoCuaca dengan respons JSON dinamis
+Express.js digunakan sebagai framework backend untuk membangun server dan endpoint JSON. Pada jobsheet ini dibuat endpoint utama:
 
-Menggunakan req.query untuk membaca parameter lokasi
+/infoCuaca
+Endpoint ini mengembalikan data cuaca dalam format JSON berdasarkan alamat yang dimasukkan pengguna.
 
-Mengintegrasikan API Mapbox dan Weatherstack
+Express.js mempermudah pengelolaan routing, request, dan response sehingga pembuatan API menjadi lebih terstruktur.
 
-Membuat modul:
+🌐 Integrasi API Eksternal
+
+Untuk menampilkan informasi cuaca, aplikasi dihubungkan dengan dua API eksternal, yaitu:
+
+Mapbox API
+Digunakan untuk mengubah alamat menjadi koordinat lokasi (latitude dan longitude).
+
+Weatherstack API
+Digunakan untuk menampilkan informasi cuaca seperti deskripsi cuaca, suhu, visibilitas, dan indeks UV.
+
+Kedua API tersebut diakses melalui dua modul utilitas:
 
 geocode.js → pengambilan data lokasi
 
 prediksiCuaca.js → pengambilan informasi cuaca
 
-Menggabungkan seluruh modul di dalam app.js
+🧪 Hasil Implementasi Endpoint
 
-Menghubungkan frontend menggunakan Fetch API
+Hasil akhir dari endpoint JSON yang dibuat berupa respons seperti berikut:
 
-Menambahkan validasi input dan CSS agar tampilan lebih interaktif
-
-Contoh Respons JSON
 {
   "prediksiCuaca": "Cuaca cerah dengan suhu 30 derajat",
   "lokasi": "Padang, Indonesia",
   "address": "padang"
 }
 
-✅ Hasil
 
-Aplikasi yang dibangun berhasil:
+Data tersebut dikirimkan ke client secara dinamis sesuai input pengguna.
 
-Menampilkan data cuaca berdasarkan lokasi pengguna
+🖥️ Integrasi Frontend
 
-Mengirim dan menerima data dalam format JSON
+Aplikasi frontend dihubungkan dengan backend menggunakan Fetch API, sehingga pengguna dapat:
 
-Mengintegrasikan frontend, backend, dan API eksternal
+Memasukkan lokasi melalui form pencarian
 
-Menyajikan informasi secara real-time tanpa reload halaman
+Melihat hasil cuaca tanpa perlu reload halaman
+
+Mendapatkan pesan validasi jika input kosong
+
+Tampilan aplikasi juga diperindah menggunakan CSS agar lebih interaktif dan nyaman digunakan.
+
+🧾 Kesimpulan
+
+Melalui Jobsheet 6 ini, saya memahami bahwa JSON HTTP Endpoints merupakan komponen utama dalam pengembangan aplikasi web berbasis API. Saya mempelajari cara membangun endpoint dinamis menggunakan Express.js, memanfaatkan query string sebagai input pengguna, serta mengintegrasikan Node.js dengan API eksternal seperti Mapbox dan Weatherstack.
+
+Selain itu, jobsheet ini juga memberikan pemahaman mengenai integrasi frontend dan backend menggunakan Fetch API serta penerapan validasi input dan tampilan antarmuka.
+
+📌 Jobsheet ini membantu saya memahami alur kerja aplikasi web modern dari sisi backend, frontend, hingga integrasi API secara menyeluruh.
