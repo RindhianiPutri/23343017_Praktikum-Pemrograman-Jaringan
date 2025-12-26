@@ -1,6 +1,6 @@
 # 🧪 Jobsheet 4 – JavaScript Essentials
 
-**Mata Kuliah: Pemrograman Jaringan**
+**Mata Kuliah: Praktikum Pemrograman Jaringan**
 
 
 
