@@ -2,7 +2,8 @@
 🧩 Deskripsi Singkat
 
 Pada JobSheet ini, saya mempelajari cara membangun JSON HTTP Endpoints menggunakan Express.js. Fokus utama meliputi pembuatan endpoint dinamis, penggunaan query string (req.query), serta integrasi API eksternal untuk menampilkan data cuaca secara real-time.
-Jobsheet ini juga menghubungkan backend dan frontend menggunakan Fetch API tanpa perlu reload halaman.
+
+Selain itu, jobsheet ini juga menghubungkan backend dan frontend menggunakan Fetch API tanpa perlu melakukan reload halaman.
 
 🎯 Tujuan Pembelajaran
 
@@ -18,11 +19,11 @@ Integrasi Node.js dengan API eksternal
 
 Komunikasi frontend–backend secara asinkron
 
-Validasi input dan peningkatan tampilan UI
+Validasi input dan peningkatan tampilan antarmuka (UI)
 
 🛠️ Bagian Latihan
 
-Langkah-langkah yang saya lakukan:
+Langkah-langkah yang saya lakukan meliputi:
 
 Membuat endpoint /infoCuaca dengan respons JSON dinamis
 
@@ -32,18 +33,17 @@ Mengintegrasikan API Mapbox dan Weatherstack
 
 Membuat modul:
 
-geocode.js (data lokasi)
+geocode.js → pengambilan data lokasi
 
-prediksiCuaca.js (informasi cuaca)
+prediksiCuaca.js → pengambilan informasi cuaca
 
-Menggabungkan modul di app.js hingga menghasilkan output JSON
+Menggabungkan seluruh modul di dalam app.js
 
-Menghubungkan frontend dengan Fetch API
+Menghubungkan frontend menggunakan Fetch API
 
 Menambahkan validasi input dan CSS agar tampilan lebih interaktif
 
-Contoh respons JSON:
-
+Contoh Respons JSON
 {
   "prediksiCuaca": "Cuaca cerah dengan suhu 30 derajat",
   "lokasi": "Padang, Indonesia",
@@ -52,17 +52,12 @@ Contoh respons JSON:
 
 ✅ Hasil
 
-Aplikasi berhasil:
+Aplikasi yang dibangun berhasil:
 
-Menampilkan data cuaca berdasarkan lokasi
+Menampilkan data cuaca berdasarkan lokasi pengguna
 
 Mengirim dan menerima data dalam format JSON
 
 Mengintegrasikan frontend, backend, dan API eksternal
 
-Menyajikan informasi secara real-time tanpa refresh
-
-📌 Kesimpulan
-
-JobSheet ini membantu saya memahami peran penting JSON HTTP Endpoints dalam aplikasi web modern. Saya belajar membangun endpoint dinamis, mengelola input pengguna, menghubungkan API eksternal, serta mengintegrasikan frontend dan backend secara efektif.
-Secara keseluruhan, jobsheet ini memperkuat pemahaman saya tentang alur kerja aplikasi web berbasis API 🌐✨
+Menyajikan informasi secara real-time tanpa reload halaman
