@@ -1,6 +1,6 @@
 # 🧪 Jobsheet Node.js – Sistem Modul dan NPM
 
-**Mata Kuliah: Pemrograman Jaringan**
+**Mata Kuliah: Praktikum Pemrograman Jaringan**
 
 
 ## 📘 Pengantar Node.js dan Sistem Modul
