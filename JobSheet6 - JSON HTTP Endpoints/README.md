@@ -71,9 +71,10 @@ Hasil akhir dari endpoint JSON yang dibuat berupa respons sebagai berikut:
   "lokasi": "Padang, Indonesia",
   "address": "padang"
 }
+
 Data tersebut dikirimkan ke client secara dinamis sesuai dengan input lokasi pengguna.
 
-🖥️ Integrasi Frontend
+## 🖥️ Integrasi Frontend
 
 Aplikasi frontend dihubungkan dengan backend menggunakan Fetch API, sehingga pengguna dapat:
 
@@ -85,7 +86,7 @@ Mendapatkan pesan validasi ketika input lokasi kosong
 
 Tampilan aplikasi juga diperindah menggunakan CSS agar lebih interaktif dan nyaman digunakan.
 
-🧾 Kesimpulan
+##🧾 Kesimpulan
 
 Melalui Jobsheet 6 ini, saya memahami bahwa JSON HTTP Endpoints merupakan komponen utama dalam pengembangan aplikasi web berbasis API. Saya mempelajari cara membangun endpoint dinamis menggunakan Express.js, memanfaatkan query string sebagai input pengguna, serta mengintegrasikan Node.js dengan API eksternal seperti Mapbox dan Weatherstack.
 
