@@ -1,0 +1,96 @@
+# 🧪 Jobsheet 6 – JSON HTTP Endpoints
+
+**Mata Kuliah: Pemrograman Jaringan**
+
+
+## 📘 Pengantar JSON HTTP Endpoints
+
+JSON HTTP Endpoints merupakan bagian penting dalam pengembangan aplikasi web modern berbasis API. Endpoint berfungsi sebagai alamat (URL) yang digunakan client untuk mengirim permintaan dan menerima respons data dari server melalui protokol HTTP dalam format **JSON (JavaScript Object Notation)**.
+
+Pada jobsheet ini, JSON HTTP Endpoints dibangun menggunakan **Express.js** untuk melayani permintaan data cuaca secara dinamis berdasarkan input lokasi dari pengguna. Selain itu, jobsheet ini juga menghubungkan backend dan frontend menggunakan **Fetch API** tanpa perlu melakukan reload halaman.
+
+
+## 🔑 Konsep Dasar JSON HTTP Endpoints
+
+Beberapa konsep utama yang dipelajari dalam jobsheet ini antara lain:
+
+* **JSON (JavaScript Object Notation)**  
+  Format pertukaran data yang ringan, mudah dibaca, dan umum digunakan dalam komunikasi client–server.
+
+* **HTTP Endpoints**  
+  URL khusus pada aplikasi web yang digunakan untuk mengirim dan menerima data melalui protokol HTTP.
+
+* **Query String (`req.query`)**  
+  Digunakan untuk mengambil parameter dari URL, misalnya `?address=padang`, sebagai input dari pengguna.
+
+* **Pemrograman Asinkron**  
+  Memungkinkan server memproses permintaan tanpa harus menunggu proses lain selesai.
+
+* **Integrasi API Eksternal**  
+  Menghubungkan aplikasi dengan layanan pihak ketiga untuk memperoleh data tambahan.
+
+
+## ⚙️ Implementasi Express.js
+
+Express.js digunakan sebagai framework backend untuk membangun server dan endpoint JSON. Pada jobsheet ini dibuat endpoint utama, yaitu:
+
+* **`/infoCuaca`**  
+  Endpoint ini mengembalikan data cuaca dalam format JSON berdasarkan alamat yang dimasukkan oleh pengguna.
+
+Penggunaan Express.js mempermudah pengelolaan routing, request, dan response sehingga pembuatan API menjadi lebih terstruktur dan efisien.
+
+
+## 🌐 Integrasi API Eksternal
+
+Untuk menampilkan informasi cuaca, aplikasi dihubungkan dengan dua API eksternal, yaitu:
+
+* **Mapbox API**  
+  Digunakan untuk mengubah alamat menjadi koordinat lokasi (latitude dan longitude).
+
+* **Weatherstack API**  
+  Digunakan untuk menampilkan informasi cuaca seperti deskripsi cuaca, suhu, visibilitas, dan indeks UV.
+
+Kedua API tersebut diakses melalui dua modul utilitas:
+
+* `geocode.js` → pengambilan data lokasi  
+* `prediksiCuaca.js` → pengambilan informasi cuaca  
+
+Seluruh modul kemudian digabungkan di dalam file `app.js`.
+
+
+
+## 🧪 Hasil Implementasi Endpoint
+
+Hasil akhir dari endpoint JSON yang dibuat berupa respons dinamis sebagai berikut:
+
+```json
+{
+  "prediksiCuaca": "Cuaca cerah dengan suhu 30 derajat",
+  "lokasi": "Padang, Indonesia",
+  "address": "padang"
+}
+
+
+Data tersebut dikirimkan ke client sesuai dengan lokasi yang dimasukkan oleh pengguna.
+
+
+## 🖥️ Integrasi Frontend
+
+Aplikasi frontend dihubungkan dengan backend menggunakan **Fetch API**, sehingga pengguna dapat:
+
+* Memasukkan lokasi melalui form pencarian
+* Melihat hasil cuaca tanpa perlu reload halaman
+* Mendapatkan pesan validasi ketika input lokasi kosong
+
+Tampilan aplikasi juga diperindah menggunakan **CSS** agar form input, tombol pencarian, dan hasil pencarian terlihat lebih interaktif dan nyaman digunakan.
+
+
+
+## 🧾 Kesimpulan
+
+Melalui Jobsheet 6 ini, saya memahami bahwa **JSON HTTP Endpoints** merupakan komponen utama dalam pengembangan aplikasi web modern berbasis API. Saya mempelajari cara membangun endpoint dinamis menggunakan **Express.js**, memanfaatkan **query string (`req.query`)** sebagai input dari pengguna, serta mengintegrasikan **Node.js** dengan API eksternal seperti **Mapbox** dan **Weatherstack**.
+
+Selain itu, saya juga berhasil menghubungkan **frontend dan backend** menggunakan **Fetch API**, menerapkan validasi input, serta meningkatkan tampilan antarmuka dengan CSS.
+📌 *Jobsheet ini membantu saya memahami alur kerja aplikasi web modern secara menyeluruh, mulai dari backend, frontend, hingga integrasi API eksternal.*
+
+
