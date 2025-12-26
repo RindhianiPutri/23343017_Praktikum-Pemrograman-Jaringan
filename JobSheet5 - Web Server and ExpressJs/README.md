@@ -1,6 +1,6 @@
 # 🧪 Jobsheet 5 – Web Server and Express.js
 
-**Mata Kuliah: Pemrograman Jaringan**
+**Mata Kuliah: Praktikum Pemrograman Jaringan**
 
 
 
