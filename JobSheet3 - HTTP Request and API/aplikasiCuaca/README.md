@@ -1,6 +1,6 @@
 # 🧪 Jobsheet 3 – HTTP Request and API
 
-**Mata Kuliah: Pemrograman Jaringan**
+**Mata Kuliah: Praktikum Pemrograman Jaringan**
 
 
 ## 📘 Pengantar HTTP Request dan API
