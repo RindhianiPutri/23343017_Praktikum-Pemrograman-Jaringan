@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{judul}}</title>
+  <link rel="icon" href="/img/cuaca.png">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f2f8f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* === HEADER STYLE (seperti halaman berita) === */
+    header {
+      background-color: #106466;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 5px solid #7FC8A9;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    /* === KONTEN UTAMA === */
+    .main-content {
+      max-width: 800px;
+      margin: 80px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 {
+      color: #106466;
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+
+    p {
+      color: #444;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    input {
+      width: 60%;
+      padding: 10px 15px;
+      border-radius: 25px;
+      border: 1px solid #ccc;
+      outline: none;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    input:focus {
+      border-color: #106466;
+      box-shadow: 0 0 5px rgba(16, 100, 102, 0.4);
+    }
+
+    button {
+      background-color: #106466;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 25px;
+      margin-left: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #0b4d4f;
+    }
+
+    #pesan-1, #pesan-2 {
+      margin-top: 20px;
+      font-size: 15px;
+      color: #333;
+      background: #eaf6f6;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
+      color: #666;
+      border-top: 1px solid #ccc;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header mirip halaman berita -->
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/tentang">Tentang</a>
+      <a href="/bantuan">Bantuan</a>
+      <a href="/berita">Berita</a>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <h1>🌤️ Aplikasi Cek Cuaca</h1>
+    <p>Gunakan website ini untuk menemukan informasi cuaca terkini berdasarkan lokasi pilihanmu!</p>
+
+    <form>
+      <input placeholder="Masukkan lokasi" id="lokasi">
+      <button id="btnCari">Cari Lokasi</button>
+    </form>
+
+    <p id="pesan-1"></p>
+    <p id="pesan-2"></p>
+  </div>
+
+  <footer>
+    Dikembangkan oleh <b>Rindhiani Putri</b>
+  </footer>
+
+  <script>
+    document.getElementById('btnCari').addEventListener('click', async (e) => {
+      e.preventDefault();
+      const lokasi = document.getElementById('lokasi').value;
+      const pesan1 = document.getElementById('pesan-1');
+      const pesan2 = document.getElementById('pesan-2');
+
+      pesan1.textContent = "🔎 Mencari data cuaca...";
+      pesan2.textContent = "";
+
+      try {
+        const res = await fetch(`/infocuaca?address=${lokasi}`);
+        const data = await res.json();
+
+        if (data.error) {
+          pesan1.textContent = "❌ " + data.error;
+          return;
+        }
+
+        pesan1.textContent = `📍 Lokasi: ${data.lokasi}`;
+        pesan2.textContent = `🌡️ Cuaca: ${data.prediksiCuaca}`;
+      } catch (err) {
+        pesan1.textContent = "⚠️ Gagal memuat data cuaca.";
+      }
+    });
+  </script>
+
+</body>
+</html>

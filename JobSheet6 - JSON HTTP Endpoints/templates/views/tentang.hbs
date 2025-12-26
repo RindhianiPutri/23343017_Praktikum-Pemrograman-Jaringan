@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Rindhiani Putri</title>
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,300,600,700" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #e9f4f6, #f7fdfc);
+      color: #2e3a40;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background-color: #106466;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 5px solid #7FC8A9;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    /* ===== CV WRAPPER ===== */
+    .resume-wrapper {
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: 40px auto;
+      max-width: 1000px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: white;
+    }
+
+    /* BAGIAN PROFIL (KIRI) */
+    .profile {
+      background: #fff;
+      color: #555;
+      width: 40%;
+      padding: 50px 40px;
+    }
+
+    .picture-resume-wrapper {
+      text-align: center;
+    }
+
+    .picture-resume img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #9adbb5;
+      object-fit: cover;
+    }
+
+    .name-wrapper h1 {
+      font-family: 'Varela Round', sans-serif;
+      color: #4a4e51;
+      font-size: 2.3em;
+      margin: 20px 0 5px;
+    }
+
+    .name-wrapper h4 {
+      color: #6cbfa8;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .list-titles, .list-content {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    .list-titles {
+      color: #4a4e51;
+      font-weight: 600;
+    }
+
+    .list-content {
+      color: #555;
+    }
+
+    .contact-presentation {
+      text-align: left;
+      margin-top: 40px;
+      font-weight: 300;
+      color: #555;
+    }
+
+    .contact-social {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-icon i {
+      font-size: 1.6em;
+      color: #6cbfa8;
+      transition: 0.3s;
+    }
+
+    .social-icon i:hover {
+      color: #4a4e51;
+    }
+
+    /* BAGIAN ISI (KANAN) */
+    .experience {
+      background: #3d3e42;
+      color: #ddd;
+      width: 60%;
+      padding: 50px 50px;
+    }
+
+    .experience h3.experience-title {
+      color: #9adbb5;
+      font-size: 1.4em;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .biodata, .education, .skills {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+    }
+
+    .biodata li, .education li {
+      margin-bottom: 8px;
+    }
+
+    .section-wrapper {
+      margin-top: 40px;
+    }
+
+    .section-title {
+      color: #9adbb5;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+
+    .skill-percentage {
+      position: relative;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+
+    .skill-percentage::after {
+      content: "";
+      width: 100%;
+      height: 6px;
+      background: #555;
+      display: block;
+      border-radius: 3px;
+    }
+
+    .skill-percentage::before {
+      content: "";
+      height: 6px;
+      background: #9adbb5;
+      position: absolute;
+      bottom: 0;
+      border-radius: 3px;
+      animation: grow 1s ease forwards;
+    }
+
+    .skill-percentage:nth-child(1)::before { width: 85%; }
+    .skill-percentage:nth-child(2)::before { width: 80%; }
+    .skill-percentage:nth-child(3)::before { width: 70%; }
+    .skill-percentage:nth-child(4)::before { width: 75%; }
+    .skill-percentage:nth-child(5)::before { width: 65%; }
+    .skill-percentage:nth-child(6)::before { width: 90%; }
+
+    @keyframes grow {
+      from { width: 0; }
+    }
+
+    @media (max-width: 900px) {
+      .profile, .experience {
+        width: 100%;
+      }
+      .name-wrapper h1 {
+        font-size: 1.8em;
+      }
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      color: #7d8b8b;
+      margin-top: 30px;
+      border-top: 1px solid #d8eae5;
+      padding: 15px 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/tentang">Tentang</a>
+      <a href="/bantuan">Bantuan</a>
+      <a href="/berita">Berita</a>
+    </nav>
+  </header>
+
+  <!-- CV UTAMA -->
+  <div class="resume-wrapper">
+    <!-- PROFIL -->
+    <section class="profile">
+      <div class="picture-resume-wrapper">
+        <div class="picture-resume">
+          <img src="/img/foto.png" alt="Foto Rindhiani Putri" />
+        </div>
+      </div>
+
+      <div class="name-wrapper">
+        <h1>Rindhiani<br>Putri</h1>
+        <h4>Mahasiswa Informatika</h4>
+      </div>
+
+      <div class="contact-info clearfix">
+        <ul class="list-titles">
+          <li>Telepon</li>
+          <li>Email</li>
+          <li>Alamat</li>
+        </ul>
+        <ul class="list-content">
+          <li>+62 895-4114-53593</li>
+          <li>rindi1826@gmail.com</li>
+          <li>Air Tawar Barat, Kota Padang</li>
+        </ul>
+      </div>
+
+      <div class="contact-presentation">
+        <p><span class="bold">Halo!</span> Saya Rindhiani Putri, mahasiswa Informatika di Universitas Negeri Padang. Saya tertarik dengan dunia pengembangan web, UI/UX design, dan analisis data. Saya percaya teknologi dapat membawa dampak positif bagi banyak orang.</p>
+      </div>
+
+      <div class="contact-social clearfix">
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+
+    <!-- ISI -->
+    <section class="experience">
+      <h3 class="experience-title">Biodata Diri</h3>
+      <ul class="biodata">
+        <li><strong>Nama:</strong> Rindhiani Putri</li>
+        <li><strong>Tempat, Tanggal Lahir:</strong> Palembang, 17 Agustus 2005</li>
+        <li><strong>Jenis Kelamin:</strong> Perempuan</li>
+        <li><strong>Agama:</strong> Islam</li>
+        <li><strong>Pendidikan Saat Ini:</strong> S1 Informatika, Universitas Negeri Padang</li>
+      </ul>
+
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">Riwayat Pendidikan</h3>
+        <ul class="education">
+          <li>SD Negeri 1 Pulau Punjung (2011 - 2017)</li>
+          <li>SMP Negeri 1 Junjung Sirih (2017 - 2020)</li>
+          <li>SMA Negeri 1 Junjung Sirih (2020 - 2023)</li>
+          <li>Universitas Negeri Padang - Informatika (2023 - Sekarang)</li>
+        </ul>
+      </div>
+
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">Keahlian</h3>
+        <ul class="skills">
+          <li class="skill-percentage">Desain UI/UX</li>
+          <li class="skill-percentage">Pengembangan Web (HTML, CSS, JS)</li>
+          <li class="skill-percentage">E-Commerce System</li>
+          <li class="skill-percentage">Analisis Data (Python, Excel)</li>
+          <li class="skill-percentage">Database (MySQL, MongoDB)</li>
+          <li class="skill-percentage">Komunikasi & Kolaborasi Tim</li>
+        </ul>
+      </div>
+
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">Hobi</h3>
+        <p>Membaca artikel teknologi, mendesain antarmuka web, menonton film inspiratif, dan membuat proyek kecil berbasis web serta AI.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- FOOTER -->
+   <footer>
+    Dikembangkan oleh <b>Rindhiani Putri</b>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Bantuan</title>
+  <link rel="icon" href="/img/cuaca.png">
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #e9f4f6, #f7fdfc);
+      color: #2e3a40;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background-color: #106466;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 5px solid #7FC8A9;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    /* ===== KONTEN UTAMA ===== */
+    .main-content {
+      width: 90%;
+      max-width: 850px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 50px;
+      text-align: center;
+      transition: 0.3s;
+      margin: 40px auto;
+    }
+
+    .main-content:hover {
+      box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+    }
+
+    h1 {
+      color: #3d7c7c;
+      margin-bottom: 40px;
+      font-size: 2em;
+      font-weight: 700;
+    }
+
+    .faq-item {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f2fbfa;
+      border-left: 5px solid #7cd1c0;
+      border-radius: 10px;
+      transition: 0.3s;
+      text-align: left;
+    }
+
+    .faq-item:hover {
+      background: #eafaf8;
+      border-left-color: #5ab9a7;
+    }
+
+    .faq-item h3 {
+      color: #327e7e;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .faq-item p {
+      margin: 0;
+      color: #44545a;
+      line-height: 1.6;
+      text-align: justify;
+      padding-bottom: 30px;
+    }
+
+    .faq-image {
+      display: block;
+      margin: 25px auto;
+      width: 85%;
+      max-width: 500px;
+      border-radius: 10px;
+      border: 2px solid #c8ede6;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      color: #7d8b8b;
+      margin-top: 40px;
+      border-top: 1px solid #e0eceb;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        padding: 30px;
+        margin: 30px 15px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/tentang">Tentang</a>
+      <a href="/bantuan">Bantuan</a>
+      <a href="/berita">Berita</a>
+    </nav>
+  </header>
+
+  <!-- KONTEN UTAMA -->
+  <div class="main-content">
+    <h1>Frequently Asked Questions (FAQ)</h1>
+
+    <div class="faq-item">
+      <h3>a. Halaman ini digunakan untuk apa?</h3>
+      <p>Halaman bantuan ini berisi informasi dan panduan singkat tentang aplikasi “Cek Cuaca”. Di sini pengguna bisa memahami fungsi aplikasi dan teknologi yang digunakan di baliknya.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>b. Apa itu API?</h3>
+      <p>API (Application Programming Interface) adalah penghubung antara satu aplikasi dengan aplikasi lain. Dengan API, aplikasi cuaca bisa mengambil data dari sumber eksternal tanpa harus mengelola data cuaca secara langsung.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>c. API apa yang digunakan dalam aplikasi ini?</h3>
+      <p>Aplikasi ini menggunakan dua API utama: <b>PositionStack API</b> untuk mendapatkan koordinat lokasi (latitude dan longitude) berdasarkan nama kota, dan <b>WeatherStack API</b> untuk menampilkan informasi cuaca terkini dari koordinat tersebut.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>d. Salah satu pola arsitektur API adalah RESTful API. Jelaskan!</h3>
+      <p>SOAP API bekerja dengan cara klien membuat permintaan layanan dalam format XML, yang berisi metode yang ingin dipanggil beserta parameternya. Permintaan ini kemudian dikirim ke server SOAP melalui protokol HTTP atau HTTPS, dan diterima oleh SOAP Request Handler yang berfungsi sebagai penghubung antara klien dan server.
+        Setelah pesan diterima, server SOAP memproses permintaan tersebut dengan memanggil layanan yang sesuai di sisi server. Hasil dari proses ini kemudian dikembalikan dalam bentuk respons XML standar, yang berisi data hasil pemanggilan atau pesan kesalahan. Respons tersebut dikirim kembali ke klien melalui handler agar bisa ditampilkan atau digunakan sesuai kebutuhan.
+      </p>
+      <img src="\img\soap.png" alt="Diagram RESTful API" class="faq-image">
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    Dikembangkan oleh <b>Rindhiani Putri</b>
+  </footer>
+</body>
+</html>
