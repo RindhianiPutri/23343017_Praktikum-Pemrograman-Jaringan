@@ -1,6 +1,6 @@
 # 🧪 Jobsheet 6 – JSON HTTP Endpoints
 
-**Mata Kuliah: Pemrograman Jaringan**
+**Mata Kuliah: Praktikum Pemrograman Jaringan**
 
 
 ## 📘 Pengantar JSON HTTP Endpoints
